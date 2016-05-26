@@ -1,0 +1,56 @@
+@SysInclude { tbl }
+@SysInclude { diag }
+@SysInclude { cprint }
+@SysInclude { eq }
+@Include { mybook } # Oma book-pohja
+@Database @Reference { references }
+@Book
+  @Title { Master's degree template }
+  @Author { Mikko Välimäki }
+  @Edition { }
+  @Publisher { TTY }
+# @BeforeTitlePage { @Include { status.lout } }
+  @OnTitlePage {
+
+    2vx @Break
+    
+    @IncludeGraphic "images/tty_tut_logo.eps"
+    
+    @B { Diplomityöpohja }
+
+# @Display outdent @Break { 
+# Aihe hyväksytty osastoneuvoston kokouksessa 16.10.2002
+# @LP
+# Tarkastajat:    
+# outdent @Break {
+# Prof. X (TTY) 
+# @LP
+# }
+# }
+} # OnTitlePage
+
+# @AfterTitlePage { tiivistelmä? }
+# @AtEnd { at end }
+  @InitialFont { Times Base 12p }
+  # Riviväli puolitoista
+  @InitialBreak { adjust 1.5fx hyphen }
+# @InitialBreak { adjust 1.5fx nohyphen } # tavutus pois oikolukua varten
+  @InitialSpace { lout }
+  @InitialLanguage { Finnish }
+  @PageOrientation { Portrait }
+  @PageHeaders { Titles }
+  @FirstPageNumber { 1 }
+  @ColumnNumber { 1 }
+  @OptimizePages { No }
+  # Title page lasketaan mukaan, tällä saadaan alkulauseesta 'i'
+  @IntroFirstPageNumber { 0 }
+//
+
+# @Include { preface.lout }
+# @Include { abstract.lout }
+# @Include { terms.lout }
+# @Include { intro.lout }
+# @Include { ... }
+# @Include { summary.lout }
+# @Include { appendix1.lout }
+
