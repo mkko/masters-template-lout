@@ -2,10 +2,10 @@ SRC:= $(wildcard *.lout)
 SRC += references.ld
 
 book: 
-	lout -U book.lout > book.ps
+	iconv -t ISO-8859-15 < book.lout | lout -U > book.ps
 
 book.ps: $(SRC)
-	lout -U book.lout > book.ps
+	iconv -t ISO-8859-15 < book.lout | lout -U > book.ps
 
 txt:    $(SRC)
 	lout -p -U book.lout > book.txt

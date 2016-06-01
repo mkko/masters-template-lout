@@ -12,14 +12,14 @@
 # @BeforeTitlePage { @Include { status.lout } }
   @OnTitlePage {
 
-    2vx @Break
-    
-    @IncludeGraphic "images/tty_tut_logo.eps"
-    
-    @B { Diplomityöpohja }
+2vx @Break
+
+@IncludeGraphic "images/tty_tut_logo.eps"
+
+@B { Diplomityöpohja }
 
 # @Display outdent @Break { 
-# Aihe hyväksytty osastoneuvoston kokouksessa 16.10.2002
+# Aihe hyväksytty osastoneuvoston kokouksessa xx.xx.20xx
 # @LP
 # Tarkastajat:    
 # outdent @Break {
