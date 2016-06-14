@@ -13,13 +13,10 @@
   @OnTitlePage {
 
 @ZeroHeight -6f @VShift 7.8c @Wide @Scale @IncludeGraphic "images/tty_tut_logo.eps" @LP
-@ZeroHeight -27f @VShift { Helvetica Base 14p } @Font {
-MIKKO VÄLIMÄKI @LP
-DIPLOMITYÖPOHJA @LP
-12p @Font {
-@LP
-Diplomityö
-}} @LP
+-27f @VShift {
+{ CMUSansSerif Bold 14p } @Font { MIKKO VÄLIMÄKI @LP DIPLOMITYÖPOHJA } @LP
+{ CMUSansSerif Medium 12p } @Font { Diplomityö }
+}
 
 # @Display outdent @Break { 
 # Aihe hyväksytty osastoneuvoston kokouksessa xx.xx.20xx

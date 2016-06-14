@@ -557,3 +557,4 @@
 
 @SysDatabase @FontDef  { fontdefs }		  # font definitions
 @SysDatabase @RefStyle { refstyle }		  # reference printing styles
+@Database @FontDef { cmfontdefs }
